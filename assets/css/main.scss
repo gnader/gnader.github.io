@@ -1,0 +1,43 @@
+---
+---
+
+/* modify Bootstrap variables here */
+
+@import "assets/css/bootstrap/bootstrap";
+
+/* add additional CSS rules below */
+
+.pubitem {
+	margin: 2em 0;
+	line-height: 1em;
+}
+
+.pubyear {
+	width: 100%;
+}
+
+.pubtitle {
+	margin-bottom: 0.5em;
+	line-height: 1.2em;
+	font-weight: bold;
+}
+
+.pubauthors,
+.pubinfo {
+	font-size: 75%;
+	margin-bottom: 0.75em;
+}
+
+.pubteaser {
+	clear: both;
+}
+
+.pubteaser a {
+	float: left;
+	margin-right: 2em;
+}
+
+.pubteaser img {
+	width: 150px;
+	border: 0px solid black;
+}

@@ -1,1 +1,17 @@
-theme: jekyll-theme-cayman
+# site settings
+title: "Georges Nader"
+description: Georges Nader's homepage
+
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+
+# build settings
+sass:
+  sass_dir: css
+  style: compressed
+
+# collections
+collections:
+  publications:
+    output: true
+    permalink: /:collection/:name

@@ -1,10 +1,18 @@
-## About
-I am currently a research enginneer at Panasonic R&D Center Singapore as a member of the IP3D team. 
+---
+layout: default
+title: "Georges Nader's homepage"
+---
 
-Previously, I was a Post-doc researcher at the Singapore University of Technology and Design (SUTD) working on computational tools for machine knitting.
-I have also a memeber of Manao Team at INRIA Bordeaux Sud-Ouest where I developped with Dr. Gael Guennebaud a solver for the L2 optimal transport problem in 2D.
+I am a researcher/computer engineer specializing in geometry processing, computer graphics and computer vision.
 
-I have obtained my a PhD. from Université Claude Bernard Lyon 1. During my PhD, I have worked on the perception geometric distortion of 3D meshes under the supervision of Pr. Florent Dupont, Dr. Franck Hétroy-Wheeler and Dr. Kai Wang. My goal was to develop a method for computing the threshold beyond which a geometric distortion becomes visible.
+My
 
-## Publications
+Currently, I am a researcher at Panasonic R&D center Singapore working on 3D reconstruction technology.
 
+Previously, I was a postdoctoral researcher at Singapore University of Technology and Design (2018-2020) and Inria Bordeaux Sud-Ouest (2017) where I developed a novel pipeline for machine knitting and fast solver for the optimal transport problem, respectively.
+
+I did a PhD in computer science at Université Claude Bernard Lyon 1, France. My thesis on the perception of geometric distortions on 3D meshes was supervised by Pr. Florent Dupont, Pr. Franck Hétroy-Wheeler and Dr. Kai Wang. The goal of this work was to develop a model that computes a threshold beyond which a geometric distortion on a 3D mesh becomes visible to a human observer.
+
+I am trying setup a blog where my goal is to write articles about topics within my research interest.
+
+Outside of work, I enjoy running, hiking and photography.

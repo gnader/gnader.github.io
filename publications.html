@@ -1,0 +1,37 @@
+---
+layout: default
+title: Publications
+---
+
+<h1 class="mt-5">Publications</h1>
+<p>All my publications are sorted by date. You can also find me on <a href="https://scholar.google.com/citations?user=ZdFsulYAAAAJ&hl=en">Google Scholar</a>.</p>
+
+{%- for _year_ in (2014..2021) reversed -%}
+{%- assign publications = site.publications | where_exp: "pub", "pub.year == _year_" | sort: "year" | reverse -%}
+{%- if publications.size > 0 -%}
+<table width="100%">
+  <thead>
+    <tr>
+      <th colspan="2"><div>{{_year_}}<hr/></div></th>
+    </tr>
+  </thead>
+  <tbody>
+    {%- for pub in publications -%}
+    <tr>
+      <td width="200 px">
+        <div class="pubteaser">
+        <a href="{{pub.url}}"><img src="/publications/{{ pub.slug }}_icon.png" alt="{{pub.slug}} publication teaser"/></a>
+        </div>
+      </td>
+      <td>
+        <div class="pubtitle">{{ pub.title }}</div>
+        <div class="pubauthors">{{ pub.authors }}</div>
+        <div class="pubinfo">{{ pub.journal }}, {{ pub.year }} {% if pub.conference %}, ({{pub.conference}}) {% endif %}</div>
+      </td>
+    </tr>
+    {%- endfor -%}
+  </tbody>
+</table>
+{%- endif -%}
+{%- endfor -%}
+
