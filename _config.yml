@@ -7,7 +7,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 
 # build settings
 sass:
-  sass_dir: css
+  sass_dir: ./css
   style: compressed
 
 # collections
