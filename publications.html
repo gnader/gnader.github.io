@@ -4,8 +4,6 @@ title: Publications
 ---
 
 <h1 class="mt-5">Publications</h1>
-<p>All my publications are sorted by date. You can also find me on <a href="https://scholar.google.com/citations?user=ZdFsulYAAAAJ&hl=en">Google Scholar</a>.</p>
-
 {%- for _year_ in (2014..2021) reversed -%}
 {%- assign publications = site.publications | where_exp: "pub", "pub.year == _year_" | sort: "year" | reverse -%}
 {%- if publications.size > 0 -%}
