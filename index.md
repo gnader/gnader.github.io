@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: Georges Nader's webpage
 
 image: profile.jpeg
 ---
