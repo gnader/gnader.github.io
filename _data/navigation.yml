@@ -1,5 +1,7 @@
 header:
-  - title: Blog
-    url: /blog.html
+  # - title: About
+  #   url: /_pages/about.html
+  # - title: Blog
+  #   url: /blog.html
   - title: Publications
-    url: /publications.html
+    url: /_pages/publications.html

@@ -1,0 +1,12 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="/index.html">{{ site.title }}</a>
+    <ul class="navbar-nav ml-auto">
+      {%- for _item in site.data.navigation.header -%}
+      <li class="nav-item">
+        <a class="nav-link" href="{{_item.url}}">{{ _item.title }}</a>
+      </li>
+      {%- endfor -%}
+      </ul>
+  </div>
+</nav>

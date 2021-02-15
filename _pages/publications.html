@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<div class="container">
+  <div><h2>Publications</h2><hr/></div>
+  {%- for _year_ in (2014..2021) reversed -%}
+    {%- assign pubs = site.publications | where_exp: "pub", "pub.year == _year_" | sort: "year" | reverse -%}
+    {%- if pubs.size > 0 -%}
+      <div class="row">
+        <div class="pubyear col-12"><h4>{{_year_}}</h4></div>
+      </div>
+      <table>
+        <tbody>
+        {%- for pub in pubs -%}
+        <tr>
+          <td width="150px">
+            <div class="pubteaser">
+              <a href="{{pub.url}}"><img src="/assets/img/pub/{{ pub.slug }}_thumb.png" alt="{{pub.slug}} publication teaser"/></a>
+            </div>
+          </td>
+          <td>
+            <div class="pubtitle">{{ pub.title }}</div>
+            <div class="pubauthors">{{ pub.authors }}</div>
+            <div class="pubinfo">{{ pub.journal }}, {{ pub.year }} {% if pub.conference %}, ({{pub.conference}}) {% endif %}</div>
+            <div>
+              <span>
+              {% if pub.links.doi %}<a href="{{pub.links.doi}}">[paper]</a>{% endif %}
+              {% if pub.links.pdf %}<a href="{{pub.links.pdf}}">[pdf]</a>{% endif %}
+              {% if pub.links.code %}<a href="{{pub.links.code}}">[code]</a>{% endif %}
+              </span>
+            </div>
+          </td>
+        </tr>
+        {%- endfor -%}
+        </tbody>
+      </table>
+    {%- endif -%}
+  {%- endfor -%}
+</div>

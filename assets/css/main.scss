@@ -1,0 +1,39 @@
+---
+---
+
+.pubitem {
+	margin: 2em 0;
+	line-height: 1em;
+}
+
+.pubyear {
+	margin-top: 2em;
+}
+
+.pubtitle {
+	margin-bottom: 0.5em;
+	line-height: 1.2em;
+	font-size: 125%;
+	font-weight: bold;
+}
+
+.pubauthors,
+.pubinfo {
+	font-size: 100%;
+	margin-bottom: 0.25em;
+}
+
+.pubteaser {
+	clear: both;
+}
+
+.pubteaser a {
+	float: left;
+	margin-right: 1em;
+	margin-top: 1em;
+}
+
+.pubteaser img {
+	width: 150px;
+	border: 0px solid black;
+}

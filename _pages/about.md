@@ -7,7 +7,7 @@ image: profile.jpeg
 
 I am a researcher/computer engineer specializing in geometry processing, computer graphics and computer vision.
 
-Currently, I am a researcher at **Panasonic R&D center Singapore** working on 3D reconstruction technology.
+Currently, I am a researcher at Panasonic R&D center Singapore working on 3D reconstruction technology.
 
 Previously, I was a postdoctoral researcher at Singapore University of Technology and Design (2018-2020) and Inria Bordeaux Sud-Ouest (2017) where I developed a novel pipeline for machine knitting and fast solver for the optimal transport problem, respectively.
 
