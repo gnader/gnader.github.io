@@ -9,6 +9,8 @@ description: Georges Nader's homepage
 url: "gnader.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 
+google-verification: VRVrRHDWZpfu4owhpgL6aiM-hfkMC3bpizN8Y2_UpYY
+
 # build settings
 sass:
   sass_dir: ./css
@@ -42,6 +44,9 @@ collections:
 # -----------------------------------------------------------------------------
 
 include: ["_pages"]
+
+plugins:
+  - jekyll-sitemap
 
 # -----------------------------------------------------------------------------
 # Library versions
