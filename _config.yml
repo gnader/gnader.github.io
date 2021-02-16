@@ -9,7 +9,7 @@ description: Georges Nader's homepage
 url: "gnader.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 
-google-verification: VRVrRHDWZpfu4owhpgL6aiM-hfkMC3bpizN8Y2_UpYY
+google-verification: HueUKQheeA1G7so7eLScOMlAEegv11lHfJ-RmJRR9R0
 
 # build settings
 sass:
