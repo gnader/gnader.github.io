@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<div class="container">
+  <div><h2>{{page.title}}</h2></div>
+  <div>{{page.authors}}</div>
+  <div>{{page.affiliations}}</div>
+  
+  <div>
+    <figure>
+      <img src="/assets/img/pub/{{page.slug}}_teaser.png" alt="{{page.slug}} thumbnail" width="100%"/>
+      <figcaption>{{page.caption}}</figcaption>
+    </figure>
+  </div>
+  <hr/>
+  <div>
+    {{content}}
+  </div>
+  <!-- <hr/> -->
+</div>
