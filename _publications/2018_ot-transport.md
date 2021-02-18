@@ -4,11 +4,14 @@ layout: paper
 year: 2018
 
 title: Instant Transport Maps on 2D Grids
-authors: Georges Nader, Gael Guennebaud
-affiliations: Inria, Bordeaux University, LaBRI, France
+authors:
+  - ["Georges Nader", [1]]
+  - ["Gael Guennebaud", [1]]
+affiliations:
+  - Inria, Bordeaux University, LaBRI, Brodeaux, France
 
-journal: ACM Transactions on Graphics, 37 (6), pp.13
-conference: Siggraph Asia 2018
+journal: ACM Transactions on Graphics
+conference: Siggraph Asia
 
 links:
   doi: http://dx.doi.org/10.1145/3272127.3275091
@@ -26,7 +29,7 @@ uniform grids. The core of our method is a novel iterative solver computing the 
 
 #### Video
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Ofz4-reJQRk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/Ofz4-reJQRk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <!-- #### Bibtex
 

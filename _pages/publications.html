@@ -21,8 +21,16 @@ layout: default
           </td>
           <td>
             <div class="pubtitle">{{ pub.title }}</div>
-            <div class="pubauthors">{{ pub.authors }}</div>
-            <div class="pubinfo">{{ pub.journal }}, {{ pub.year }} {% if pub.conference %}, ({{pub.conference}}) {% endif %}</div>
+            <div class="pubauthors">
+              {{pub.authors[0][0]}}
+              {%- for author in pub.authors offset:1 -%}
+              , {{ author[0] }} 
+              {%- endfor -%}
+            </div>
+            <div class="pubinfo">{{ pub.journal }} {% if pub.conference %}({{pub.conference}} {{pub.year}}) {% endif %}</div>
+            {%- if pub.award -%}
+            <div>{{pub.award}}</div>
+            {%- endif -%}
             <div>
               <span>
               {% if pub.links.doi %}<a href="{{pub.links.doi}}">[paper]</a>{% endif %}
