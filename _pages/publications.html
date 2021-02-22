@@ -13,33 +13,7 @@ layout: default
       <table>
         <tbody>
         {%- for pub in pubs -%}
-        <tr>
-          <td width="150px">
-            <div class="pubteaser">
-              <a href="{{pub.url}}.html"><img src="/assets/img/pub/{{pub.slug}}_thumb.png" alt="{{pub.slug}} thumbnail"/></a>
-            </div>
-          </td>
-          <td>
-            <div class="pubtitle">{{ pub.title }}</div>
-            <div class="pubauthors">
-              {{pub.authors[0][0]}}
-              {%- for author in pub.authors offset:1 -%}
-              , {{ author[0] }} 
-              {%- endfor -%}
-            </div>
-            <div class="pubinfo">{{ pub.journal }} {% if pub.conference %}({{pub.conference}} {{pub.year}}) {% endif %}</div>
-            {%- if pub.award -%}
-            <div>{{pub.award}}</div>
-            {%- endif -%}
-            <div>
-              <span>
-              {% if pub.links.doi %}<a href="{{pub.links.doi}}">[paper]</a>{% endif %}
-              {% if pub.links.pdf %}<a href="{{pub.links.pdf}}">[pdf]</a>{% endif %}
-              {% if pub.links.code %}<a href="{{pub.links.code}}">[code]</a>{% endif %}
-              </span>
-            </div>
-          </td>
-        </tr>
+          {% include pubItem.html %}
         {%- endfor -%}
         </tbody>
       </table>
