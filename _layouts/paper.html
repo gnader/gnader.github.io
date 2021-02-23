@@ -16,10 +16,10 @@ layout: default
     {%- assign counter = counter | plus: 1 -%}
   {%- endfor -%}
   
-  <div class="pubteaser">
-    <figure>
-      <img src="/assets/img/pub/{{page.slug}}_teaser.png" class alt="{{page.slug}} thumbnail"/>
-      <figcaption>{{page.caption}}</figcaption>
+  <div class="text-center">
+    <figure class="pubteaser">
+      <img class="responsive" src="/assets/img/pub/{{page.slug}}_teaser.png" alt="{{page.slug}} thumbnail"/>
+      <figcaption><em><b>Figure 1 </b> - {{page.caption}}</em></figcaption>
     </figure>
   </div>
   <hr/>
