@@ -1,9 +1,11 @@
 ---
-layout: about
+layout: home
 title: Georges Nader's webpage
 
 image: profile.jpeg
 ---
+
+Hello there !
 
 I am a researcher/computer engineer specializing in geometry processing, computer graphics and computer vision.
 
