@@ -2,29 +2,54 @@
 layout: default
 ---
 
-<div class="container">
-  <div><h2>{{page.title}}</h2></div>
-  <div>
-    {{page.authors[0][0]}}<sup>{{page.authors[0][1][0]}}{%- for no in page.authors[0][1] offset:1 -%},{{no}}{%- endfor -%}</sup>
-    {%- for author in page.authors offset:1 -%}
-        , {{ author[0] }}<sup>{{author[1][0]}}{%- for no in author[0][1] offset:1 -%},{{no}}{%- endfor -%}</sup> 
-    {%- endfor -%}
-  </div>
-  {%- assign counter = 1 -%}
-  {%- for affiliation in page.affiliations -%}
-    <div>{{counter}}. {{affiliation}}</div>
-    {%- assign counter = counter | plus: 1 -%}
-  {%- endfor -%}
+<div class="container h-100">
   
-  <div class="text-center">
-    <figure class="pubteaser">
-      <img class="responsive" src="/assets/img/pub/{{page.slug}}_teaser.png" alt="{{page.slug}} thumbnail"/>
-      <figcaption><em><b>Figure 1 </b> - {{page.caption}}</em></figcaption>
-    </figure>
+  <!-- paper info -->
+  <div class="row align-items-center h-100">
+    <div class="col-12 align-items-center">
+      
+      <h2>{{page.title}}</h2>
+      {%- for author in page.authors -%}
+        <div>
+          <span class="text-uppercase">{{author[0]}}</span>
+          {%- for i in author[1] -%}
+          , <span class="small text-muted"> {{page.affiliations[i]}}</span>  
+          {%- endfor -%}
+        </div> 
+      {%- endfor -%}
+
+    </div>
+  </div>
+
+  <!-- paper links -->
+  <div class="row h-100 my-3">
+    <div class="col-12 text-center">
+        {% if page.links.pdf %}<a class="btn btn-primary btn-sm" href="{{page.links.pdf}}">pdf</a>{% endif %}
+        {% if page.links.slides %}<a class="btn btn-primary btn-sm" href="{{page.links.slides}}">slides</a>{% endif %}
+        {% if page.links.code %}<a class="btn btn-primary btn-sm" href="{{page.links.code}}">code</a>{% endif %}
+        {% if page.links.bib %}<a class="btn btn-primary btn-sm" href="{{page.links.slides}}">bibtex</a>{% endif %}
+    </div>
+  </div>
+  <!-- paper teaser -->
+  <hr/>
+  <div class="row align-items-center h-100 my-3 mx-3">
+    <div class="col-12">
+
+        <img class="img-fluid" src="/assets/img/pub/{{page.slug}}_teaser.png" alt="{{page.slug}} thumbnail"/>
+        <div class="font-italic small text-justify">
+          <span class="font-weight-bold">Figure 1.<span>
+          <span class="font-weight-normal">{{page.caption}}</span>
+        </div>
+      
+    </div>
   </div>
   <hr/>
-  <div>
-    {{content}}
+    
+  <!-- paper abstract --> 
+  <div class="row align-items-center h-100 my-3">
+    <div class="col-12 text-justify">
+        {{content}}
+    </div>
   </div>
   <!-- <hr/> -->
-</div>
+</div> <!-- container -->

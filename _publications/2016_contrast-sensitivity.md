@@ -4,14 +4,14 @@ year: 2016
 
 title: Visual contrast sensitivity and discrimination for 3D meshes and their applications
 authors:
-  - ["Georges Nader", [1, 2]]
-  - ["Kai Wang", [2]]
-  - ["Franck Hétroy-Wheeler", [3]]
-  - ["Florent Dupont", [1]]
+  - ["Georges Nader", [0, 1]]
+  - ["Kai Wang", [1]]
+  - ["Franck Hétroy-Wheeler", [2]]
+  - ["Florent Dupont", [0]]
 affiliations:
-  - Université de Lyon, LIRIS, Lyon, France
-  - Université Grenoble Alpes, GIPSA-Lab, Grenoble, France
-  - Université Grenoble Alpes, LJK, Grenoble, France
+  - Université de Lyon, LIRIS
+  - Université Grenoble Alpes, GIPSA-Lab
+  - Université Grenoble Alpes, LJK
 
 journal: Computer Graphics Forum
 conference: Pacific Graphics

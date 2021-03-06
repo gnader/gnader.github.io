@@ -5,10 +5,10 @@ year: 2018
 
 title: Instant Transport Maps on 2D Grids
 authors:
-  - ["Georges Nader", [1]]
-  - ["Gael Guennebaud", [1]]
+  - ["Georges Nader", [0]]
+  - ["Gael Guennebaud", [0]]
 affiliations:
-  - Inria, Bordeaux University, LaBRI, Brodeaux, France
+  - Inria, Bordeaux University, LaBRI
 
 journal: ACM Transactions on Graphics
 conference: Siggraph Asia
