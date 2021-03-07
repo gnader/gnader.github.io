@@ -30,4 +30,6 @@ This paper presents a tool that enables the direct editing of surface features i
 
 ### Video
 
-<iframe src="https://www.youtube.com/embed/mbwIe7b2c2E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="video-responsive col-8">
+  <iframe src="https://www.youtube.com/embed/mbwIe7b2c2E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>

@@ -16,7 +16,9 @@ conference: Siggraph Asia
 links:
   doi: http://dx.doi.org/10.1145/3272127.3275091
   pdf: https://hal.inria.fr/hal-01884157/file/instant_ot_author_version_comp.pdf
+  slides: https://drive.google.com/file/d/1PYET7NeGyqgLe-2MgF0rWVA4zPax8RrP/view?usp=sharing
   code: https://github.com/ggael/otmap
+  bib: https://gnader.github.io/assets/img/pub/[bib]_2018_ot-transport.bib
 
 caption: >
   Our fast mass-transport solver enables many applications such as adaptive sampling, surface remeshing, heightfield morphing and caustic design with interactive performance. From left to right: a painting of Van Gogh (A Wheatfield with Cypresses), Max-Planck 3D model courtesy of Max-Planck Institut für Informatik, and volcano heightmaps courtesy of University of Otago.
@@ -29,7 +31,9 @@ uniform grids. The core of our method is a novel iterative solver computing the 
 
 #### Video
 
-<iframe src="https://www.youtube.com/embed/Ofz4-reJQRk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="mx-5 video-responsive">
+  <iframe src="https://www.youtube.com/embed/Ofz4-reJQRk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 <!-- #### Bibtex
 

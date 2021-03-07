@@ -8,15 +8,44 @@ layout: default
   <div class="row align-items-center h-100">
     <div class="col-12 align-items-center">
       
-      <h2>{{page.title}}</h2>
-      {%- for author in page.authors -%}
+      <div class="text-center"><h2>{{page.title}}</h2></div>
+      <div class="text-center">
+          {{page.authors[0][0]}}
+          <sup>
+            {{page.authors[0][1][0] | plus: 1}}
+            {%- for i in page.authors[0][1] offset : 1 -%}
+              , {{i | plus : 1}}
+            {%- endfor -%}
+          </sup>
+          {%- for author in page.authors offset : 1-%}
+            , {{author[0]}}
+            <sup>
+              {{author[1][0] | plus: 1}}
+              {%- for i in author[1] offset : 1 -%}
+                , {{i | plus : 1}}
+              {%- endfor -%}
+            </sup>
+          {%- endfor -%}
+      </div>
+      <div class="small text-muted text-center ">
+        1. {{page.affiliations[0]}}
+        {%- assign counter = 2 -%}
+        {%- for affiliation in page.affiliations offset : 1 -%}
+          ,  {{counter}}. {{affiliation}}
+          {%- assign counter = counter | plus: 1 -%}
+        {%- endfor -%}
+      </div>
+      <div class="mt-2 text-center">
+        {{page.journal}} {% if page.conference %}({{page.conference}} {{page.year}}) {% endif %}
+      </div>
+      <!-- {%- for author in page.authors -%}
         <div>
           <span class="text-uppercase">{{author[0]}}</span>
           {%- for i in author[1] -%}
           , <span class="small text-muted"> {{page.affiliations[i]}}</span>  
           {%- endfor -%}
         </div> 
-      {%- endfor -%}
+      {%- endfor -%} -->
 
     </div>
   </div>
