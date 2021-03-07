@@ -31,22 +31,6 @@ uniform grids. The core of our method is a novel iterative solver computing the 
 
 #### Video
 
-<div class="mx-5 video-responsive">
+<div class="mx-3 mt-2 video-responsive">
   <iframe src="https://www.youtube.com/embed/Ofz4-reJQRk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-
-<!-- #### Bibtex
-
-```
-@article{otmap_2018,
-  author  = {Nader Georges and Gael Guennebaud},
-  title   = {Instant Transport Maps on 2D Grid},
-  year    = {2018},
-  journal = {ACM Trans. Graph.},
-  volume  = {37},
-  number  = {6},
-  articleno = {249},
-  numpages = {13},
-  doi     = {10.1145/3272127.3275091}
-}
-``` -->
