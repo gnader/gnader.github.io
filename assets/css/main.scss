@@ -28,51 +28,55 @@ body {
 	position: absolute;
 }
 
-.pubitem {
-	margin: 2em 0;
-	line-height: 1em;
+a {
+	color: inherit;
 }
 
-.pubyear {
-	margin-top: 2em;
-}
+// .pubitem {
+// 	margin: 2em 0;
+// 	line-height: 1em;
+// }
 
-.pubtitle {
-	margin-bottom: 0.5em;
-	line-height: 1.2em;
-	font-size: 125%;
-	font-weight: bold;
-}
+// .pubyear {
+// 	margin-top: 2em;
+// }
 
-.pubauthors,
-.pubinfo {
-	font-size: 100%;
-	margin-bottom: 0.25em;
-}
+// .pubtitle {
+// 	margin-bottom: 0.5em;
+// 	line-height: 1.2em;
+// 	font-size: 125%;
+// 	font-weight: bold;
+// }
+
+// .pubauthors,
+// .pubinfo {
+// 	font-size: 100%;
+// 	margin-bottom: 0.25em;
+// }
 
 // .pubthumbnail {
 // 	clear: both;
 // }
 
-.pubthumbnail a {
-	float: left;
-	margin-right: 1em;
-	margin-top: 1em;
-}
+// .pubthumbnail a {
+// 	float: left;
+// 	margin-right: 1em;
+// 	margin-top: 1em;
+// }
 
-.pubthumbnail img {
-	max-width: 150px;
-	border: 0px solid black;
-}
+// .pubthumbnail img {
+// 	max-width: 150px;
+// 	border: 0px solid black;
+// }
 
-.pubteaser {
-	max-width: 800px;
-}
+// .pubteaser {
+// 	max-width: 800px;
+// }
 
-.pubteaser img {
-	max-width: 800px;
-	max-height: 300px;
-}
+// .pubteaser img {
+// 	max-width: 800px;
+// 	max-height: 300px;
+// }
 
 .test {
 	border-style: solid;

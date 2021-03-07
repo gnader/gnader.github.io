@@ -1,27 +1,33 @@
-<tr>
-  <td width="150px">
-    <div class="pubthumbnail">
-      <a href="{{pub.url}}.html"><img src="/assets/img/pub/{{pub.slug}}_thumb.png" alt="{{pub.slug}} thumbnail"/></a>
+<div class="row mt-2" style="min-height: 160px;">
+    <div class="col-xl-2 col-lg-2 col-md-3 d-none d-md-block px-0 text-center">
+      <a href="{{pub.url}}.html"><img class="img-fluid" style="width: 150px;" src="/assets/img/pub/{{pub.slug}}_thumb.png" alt="{{pub.slug}} thumbnail"/></a>
     </div>
-  </td>
-  <td>
-    <div class="pubtitle">{{ pub.title }}</div>
-    <div class="pubauthors">
-      {{pub.authors[0][0]}}
-      {%- for author in pub.authors offset:1 -%}
-      , {{ author[0] }} 
-      {%- endfor -%}
+
+    <div class="col-xl-10 col-lg-10 col-md-9 col-xs-12 px-0">
+      <div class="col-12 font-weight-bold"><a href="{{pub.url}}.html">{{ pub.title }}</a></div>
+      <div class="col-12">
+        <small>
+        {{pub.authors[0][0]}}
+        {%- for author in pub.authors offset:1 -%}
+        , {{ author[0] }} 
+        {%- endfor -%}
+        </small>
+      </div>
+      <div class="col-12">
+        <small>
+          <em>{{ pub.journal }} {% if pub.conference %}({{pub.conference}} {{pub.year}}) {% endif %}</em>
+          {%- if pub.award -%}<span class="badge badge-secondary">{{pub.award}}</span>{%- endif -%}
+        </small>
+      </div>
+      <div class="col-12 mt-3">
+        <span>
+        <a class="badge badge-pill badge-light" href="{{pub.url}}.html">webpage</a>
+        {% if pub.links.doi %}<a class="badge badge-pill badge-light" href="{{pub.links.doi}}">doi</a>{% endif %}
+        {% if pub.links.pdf %}<a class="badge badge-pill badge-light" href="{{pub.links.pdf}}">pdf</a>{% endif %}
+        {% if pub.links.slides %}<a class="badge badge-pill badge-light" href="{{pub.links.slides}}">slides</a>{% endif %}
+        {% if pub.links.code %}<a class="badge badge-pill badge-light" href="{{pub.links.code}}">code</a>{% endif %}
+        {% if pub.links.bib %}<a class="badge badge-pill badge-light" href="{{pub.links.bib}}">bibtex</a>{% endif %}
+        </span>
+      </div>
     </div>
-    <div class="pubinfo">{{ pub.journal }} {% if pub.conference %}({{pub.conference}} {{pub.year}}) {% endif %}</div>
-    {%- if pub.award -%}
-    <div>{{pub.award}}</div>
-    {%- endif -%}
-    <div>
-      <span>
-      {% if pub.links.doi %}<a href="{{pub.links.doi}}">[paper]</a>{% endif %}
-      {% if pub.links.pdf %}<a href="{{pub.links.pdf}}">[pdf]</a>{% endif %}
-      {% if pub.links.code %}<a href="{{pub.links.code}}">[code]</a>{% endif %}
-      </span>
-    </div>
-  </td>
-</tr>
+</div>
