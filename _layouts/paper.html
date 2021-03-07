@@ -42,14 +42,10 @@ layout: default
       <div class="mt-2 text-center">
         {{page.journal}} {% if page.conference %}({{page.conference}} {{page.year}}) {% endif %}
       </div>
-      <!-- {%- for author in page.authors -%}
-        <div>
-          <span class="text-uppercase">{{author[0]}}</span>
-          {%- for i in author[1] -%}
-          , <span class="small text-muted"> {{page.affiliations[i]}}</span>  
-          {%- endfor -%}
-        </div> 
-      {%- endfor -%} -->
+      {%- if page.award -%}
+        <div class="text-center"><span class="badge badge-secondary">{{page.award}}</span></div>
+      {%- endif -%}
+
 
     </div>
   </div>
@@ -57,6 +53,7 @@ layout: default
   <!-- paper links -->
   <div class="row h-100 my-3">
     <div class="col-12 text-center">
+        {% if page.links.doi %}<a class="btn btn-primary btn-sm" href="{{page.links.doi}}">doi</a>{% endif %}
         {% if page.links.pdf %}<a class="btn btn-primary btn-sm" href="{{page.links.pdf}}">pdf</a>{% endif %}
         {% if page.links.slides %}<a class="btn btn-primary btn-sm" href="{{page.links.slides}}">slides</a>{% endif %}
         {% if page.links.code %}<a class="btn btn-primary btn-sm" href="{{page.links.code}}">code</a>{% endif %}
@@ -64,19 +61,19 @@ layout: default
     </div>
   </div>
   <!-- paper teaser -->
+  {%- if page.caption -%}
   <hr/>
   <div class="row align-items-center h-100 my-3 mx-3">
-    <div class="col-12">
-
-        <img class="img-fluid" src="/assets/img/pub/{{page.slug}}_teaser.png" alt="{{page.slug}} thumbnail"/>
-        <div class="font-italic small text-justify">
+    <div class="col-12 h-100 text-center">
+        <img class="img-fluid" style="max-height: 250px;" src="/assets/img/pub/{{page.slug}}_teaser.png" alt="{{page.slug}} thumbnail"/>
+        <div class="font-italic small text-justify mt-3">
           <span class="font-weight-bold">Figure 1.<span>
           <span class="font-weight-normal">{{page.caption}}</span>
         </div>
-      
     </div>
   </div>
   <hr/>
+  {%- endif -%}
     
   <!-- paper abstract --> 
   <div class="row align-items-center h-100 my-3">

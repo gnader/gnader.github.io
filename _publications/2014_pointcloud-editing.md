@@ -8,8 +8,8 @@ authors:
   - ["Gael Guennebaud", [1]]
   - ["Nicolas Mellado", [2]]
 affiliations:
-  - Université de Lyon, LIRIS
-  - Inria, Bordeaux University, LaBRI
+  - Université de Lyon - LIRIS
+  - Inria - Bordeaux University - LaBRI
   - University College London
 
 journal: Computer Graphics Forum
@@ -19,6 +19,7 @@ links:
   doi: http://dx.doi.org/10.1111/cgf.12485
   pdf: https://hal.inria.fr/hal-01059392/file/amse-pg.pdf
   slides: https://geometry.cs.ucl.ac.uk/projects/2014/amse-pg/amse-pg.pptx
+  bib: https://gnader.github.io/assets/img/pub/[bib]_2014_pointcloud-editing.bib
 
 caption: >
   Feature-based editing of a detailed point cloud (1.5 millions points). After a prior analysis of the input model (a) to detect, count and extract pertinent scales, the user can edit the geometry in real-time using a graphic equalizer to, for instance, remove the two first level of details (b), remove only the scratches and skin pores (c), or boost them and remove the wrinkles defined at an intermediate scale (d).
@@ -30,6 +31,6 @@ This paper presents a tool that enables the direct editing of surface features i
 
 ### Video
 
-<div class="video-responsive col-8">
+<div class="mx-3 mt-2 video-responsive">
   <iframe src="https://www.youtube.com/embed/mbwIe7b2c2E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>

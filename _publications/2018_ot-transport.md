@@ -8,7 +8,7 @@ authors:
   - ["Georges Nader", [0]]
   - ["Gael Guennebaud", [0]]
 affiliations:
-  - Inria, Bordeaux University, LaBRI
+  - Inria - Bordeaux University - LaBRI
 
 journal: ACM Transactions on Graphics
 conference: Siggraph Asia

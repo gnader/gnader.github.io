@@ -9,9 +9,9 @@ authors:
   - ["Franck Hétroy-Wheeler", [2]]
   - ["Florent Dupont", [0]]
 affiliations:
-  - Université de Lyon, LIRIS
-  - Université Grenoble Alpes, GIPSA-Lab
-  - Université Grenoble Alpes, LJK
+  - Université de Lyon - LIRIS
+  - Université Grenoble Alpes - GIPSA-Lab
+  - Université Grenoble Alpes - LJK
 
 journal: Computer Graphics Forum
 conference: Pacific Graphics
@@ -20,6 +20,11 @@ award: Best Paper Award
 links:
   doi: https://doi.org/10.1111/cgf.13046
   pdf: https://hal.inria.fr/hal-01376275/document
+  slides: https://drive.google.com/file/d/15M12_F19HeD2ySHpqx25ePHxkFDl-ahH/view?usp=sharing
+  bib: https://gnader.github.io/assets/img/pub/[bib]_2016_contrast-sensitivity.bib
+
+caption: >
+  Perceptual view-dependent subdivision. (a) The perceptual subdivision process converges at around 30k vertices and the resulting mesh appears to be visually smooth. (b) Increasing the viewing distance alters the spatial frequency and fewer subdivisions are required to obtain a visually smooth model.
 ---
 
 ### Abstract
