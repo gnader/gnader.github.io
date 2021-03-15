@@ -1,12 +1,19 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
     <a class="navbar-brand" href="/index.html">{{ site.title }}</a>
-    <ul class="navbar-nav ml-auto">
-      {%- for _item in site.data.navigation.header -%}
-      <li class="nav-item">
-        <a class="nav-link" href="{{_item.url}}">{{ _item.title }}</a>
-      </li>
-      {%- endfor -%}
-      </ul>
-  </div>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarToggler">
+      <ul class="navbar-nav ml-auto">
+        {%- for _item in site.data.navigation.header -%}
+        <li class="nav-item">
+          <a class="nav-link" href="{{_item.url}}">{{ _item.title }}</a>
+        </li>
+        {%- endfor -%}
+        </ul>
+    </div>
+    </div>
 </nav>
