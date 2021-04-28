@@ -4,7 +4,7 @@
     </div>
 
     <div class="col-xl-10 col-lg-10 col-md-9 col-xs-12 px-0">
-      <div class="col-12 font-weight-bold"><a href="{{pub.url}}.html">{{ pub.title }}</a></div>
+      <div class="col-12 font-weight-bold"><a href="{{pub.url}}">{{ pub.title }}</a></div>
       <div class="col-12">
         <small>
         {{pub.authors[0][0]}}
@@ -21,7 +21,7 @@
       </div>
       <div class="col-12 mt-3">
         <span>
-        <a class="badge badge-pill badge-light" href="{{pub.url}}.html">webpage</a>
+        <a class="badge badge-pill badge-light" href="{{pub.url}}">webpage</a>
         {% if pub.links.doi %}<a class="badge badge-pill badge-light" href="{{pub.links.doi}}">doi</a>{% endif %}
         {% if pub.links.pdf %}<a class="badge badge-pill badge-light" href="{{pub.links.pdf}}">pdf</a>{% endif %}
         {% if pub.links.slides %}<a class="badge badge-pill badge-light" href="{{pub.links.slides}}">slides</a>{% endif %}
