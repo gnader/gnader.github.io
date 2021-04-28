@@ -6,7 +6,7 @@ title: "Georges Nader"
 email: georgesnader90@gmail.com
 description: Georges Nader's homepage
 
-url: "gnader.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://gnader.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 
 google-verification: HueUKQheeA1G7so7eLScOMlAEegv11lHfJ-RmJRR9R0
