@@ -34,3 +34,19 @@ This paper presents a tool that enables the direct editing of surface features i
 <div class="mx-3 mt-2 video-responsive">
   <iframe src="https://www.youtube.com/embed/mbwIe7b2c2E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+
+<p></p>
+
+#### Citation
+
+```
+@article{pointcloud-editing_2014,
+journal = {Computer Graphics Forum},
+title   = {Adaptive Multi-scale Analysis for Point-based Surface Editing},
+author  = {Georges Nader and Gael Guennebaud and Nicolas Mellado },
+pages   = {171-179},
+volume  = {33},
+number  = {7},
+year    = {2014}
+}
+```
