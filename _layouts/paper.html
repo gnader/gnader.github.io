@@ -35,7 +35,7 @@ layout: default
         1. {{page.affiliations[0]}}
         {%- assign counter = 2 -%}
         {%- for affiliation in page.affiliations offset : 1 -%}
-          ,  {{counter}}. {{affiliation}}
+          , &nbsp;&nbsp; {{counter}}. {{affiliation}}
           {%- assign counter = counter | plus: 1 -%}
         {%- endfor -%}
       </div>
@@ -53,11 +53,14 @@ layout: default
   <!-- paper links -->
   <div class="row h-100 my-3">
     <div class="col-12 text-center">
-        {% if page.links.doi %}<a class="btn btn-primary btn-sm" href="{{page.links.doi}}">doi</a>{% endif %}
+      {%- for link in page.links -%}
+        <a class="btn btn-primary btn-sm" href="{{link[1]}}">{{link[0]}}</a>
+      {%- endfor -%}
+        <!-- {% if page.links.doi %}<a class="btn btn-primary btn-sm" href="{{page.links.doi}}">doi</a>{% endif %}
         {% if page.links.pdf %}<a class="btn btn-primary btn-sm" href="{{page.links.pdf}}">pdf</a>{% endif %}
         {% if page.links.slides %}<a class="btn btn-primary btn-sm" href="{{page.links.slides}}">slides</a>{% endif %}
         {% if page.links.code %}<a class="btn btn-primary btn-sm" href="{{page.links.code}}">code</a>{% endif %}
-        {% if page.links.bib %}<a class="btn btn-primary btn-sm" href="{{page.links.bib}}">bibtex</a>{% endif %}
+        {% if page.links.bib %}<a class="btn btn-primary btn-sm" href="{{page.links.bib}}">bibtex</a>{% endif %} -->
     </div>
   </div>
   
@@ -66,7 +69,7 @@ layout: default
   <hr/>
   <div class="row align-items-center h-100 my-3 mx-3">
     <div class="col-12 h-100 text-center">
-        <img class="img-fluid" style="max-height: 250px;" src="/assets/img/pub/{{page.slug}}_teaser.png" alt="{{page.slug}} thumbnail"/>
+        <img class="img-fluid" src="/assets/img/pub/{{page.slug}}_teaser.png" alt="{{page.slug}} thumbnail"/>
         <div class="font-italic small text-justify mt-3">
           <span class="font-weight-bold">Figure 1.<span>
           <span class="font-weight-normal">{{page.caption}}</span>

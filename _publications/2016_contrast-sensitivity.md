@@ -18,8 +18,8 @@ conference: Pacific Graphics
 award: Best Paper Award
 
 links:
-  doi: https://doi.org/10.1111/cgf.13046
-  pdf: https://hal.inria.fr/hal-01376275/document
+  journal: https://doi.org/10.1111/cgf.13046
+  preprint: https://hal.inria.fr/hal-01376275/document
   slides: https://drive.google.com/file/d/15M12_F19HeD2ySHpqx25ePHxkFDl-ahH/view?usp=sharing
   bib: https://gnader.github.io/assets/img/pub/[bib]_2016_contrast-sensitivity.bib
 
@@ -33,14 +33,16 @@ In this paper, we first introduce an algorithm for estimating the visual contras
 
 #### Citation
 
-```
+<pre class="text-muted alert-secondary small col-12">
+<code>
 @article{contrastsensitivity-mesh_2016,
-  title   = {Visual Contrast Sensitivity and Discrimination for 3D Meshes and their Applications},
   author  = {Nader, Georges and Wang, Kai and H{\'e}troy-Wheeler, Franck and Dupont, Florent},
+  title   = {Visual Contrast Sensitivity and Discrimination for 3D Meshes and their Applications},
   journal = {Computer Graphics Forum},
   volume  = {35},
   number  = {7},
   pages   = {497--506},
   year    = {2016}
 }
-```
+</code>
+</pre>

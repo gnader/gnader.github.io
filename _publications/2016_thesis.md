@@ -12,7 +12,7 @@ affiliations:
 journal: PhD. Thesis
 
 links:
-  doi: https://doi.org/10.1111/cgf.13046
+  # doi: https://doi.org/10.1111/cgf.13046
   pdf: https://tel.archives-ouvertes.fr/tel-01456768v2/document
   slides: https://drive.google.com/file/d/1wSHfUFysifKoes6rcq2oJ3qRh3Eg7kq4/view?usp=sharing
   bib: https://gnader.github.io/assets/img/pub/[bib]_2016_thesis.bib
@@ -31,13 +31,15 @@ Les opérations géométriques appliquées aux maillages 3D introduisent des dis
 
 #### Citation
 
-```
+<pre class="text-muted alert-secondary small col-12">
+<code>
 @phdthesis{naderthesis_2016,
+  Author  = {Nader, Georges}, 
   Title   = {Evaluating the visibility threshold for a local geometric distortion on a 3D mesh and its applications},
-  Author  = {Nader, Georges},
   Number  = {2016LYSE1239},
-  School  = {Universite de Lyon},
-  Year    = {2016},
-  Type    = {Theses}
+  School  = {Universite de Lyon}, 
+  Year    = {2016}, 
+  Type    = {Theses} 
 }
-```
+</code>
+</pre>

@@ -3,17 +3,17 @@ layout: paper
 
 year: 2021
 
-title: KnitKit - A flexible system for machine knitting of customizable textiles
+title: "KnitKit : A flexible system for machine knitting of customizable textiles"
 authors:
   - ["Georges Nader", [0, 1]]
-  - ["Yu Han Quek", [0]]
-  - ["Pei Zhi Chia", [0]]
-  - ["Oliver Weeger", [0, 2]]
+  - ["Yu Han Quek", [1]]
+  - ["Pei Zhi Chia", [1]]
+  - ["Oliver Weeger", [2, 1]]
   - ["Sai-Kit Yeung", [3]]
 
 affiliations:
-  - Singapore University of Technology and Design
   - Panasonic R&D Center Singapore
+  - Singapore University of Technology and Design
   - Technische Universität Darmstadt
   - Hong Kong University of Science and Technology
 
@@ -21,14 +21,16 @@ journal: ACM Transactions on Graphics
 conference: Siggraph
 
 links:
-  doi: AVAILABLE_SOON
-  pdf: AVAILABLE_SOON
-  slides: AVAILABLE_SOON
-  code: AVAILABLE_SOON
-  bib: AVAILABLE_SOON
+  # doi: AVAILABLE_SOON
+  preprint: https://hal.archives-ouvertes.fr/hal-03214570/document
+  supplementary: https://hal.archives-ouvertes.fr/hal-03214570/document
+  # slides: AVAILABLE_SOON
+  # code: AVAILABLE_SOON
+  bib: https://gnader.github.io/assets/img/pub/[bib]_2021_knitkit.bib
 
 caption: >
-  The KnitKit system decouples the high-level design aspect of producing knitted textiles from the complexities and low-level specificity of knitting machines by generating machine knitting instructions from an input 3D geometry and a texture. This enables high-level design of knitting properties, i.e., geometry, yarn types and stitch patterns. Here, we CNC knitted a globe and a glove.
+  The KnitKit system decouples the high-level design aspect of producing knitted textiles from the complexities and low-level specificity of knitting machines by generating machine knitting instructions from an input 3D geometry and a texture. This enables high-level design of knitting properties, i.e., geometry, yarn types and stitch patterns. 
+  Here, we show a CNC knitted a hand holding a globe as well as a black and white and colored version of Van Ghogh's self portrait.
 ---
 
 #### Abstract
@@ -48,14 +50,16 @@ We showcase the potential of this computational approach by designing and fabric
 
 #### Citation
 
-```
+<pre class="text-muted alert-secondary small col-12">
+<code>
 @article{knitkit2021,
   author    = {Nader, Georges and Quek, Yu Han and Chia, Pei Zhi and Weeger, Oliver and Yeung, Sai-Kit},
-  title     = {KnitKit - A flexible system for machine knitting of customizable textiles},
+  title     = {KnitKit : A flexible system for machine knitting of customizable textiles},
   journal   = {ACM Transactions on Graphics (TOG)},
   number    = {4},
   volume    = {40},
   year      = {2021},
   publisher = {ACM}
 }
-```
+</code>
+</pre>

@@ -14,8 +14,8 @@ journal: ACM Transactions on Graphics
 conference: Siggraph Asia
 
 links:
-  doi: http://dx.doi.org/10.1145/3272127.3275091
-  pdf: https://hal.inria.fr/hal-01884157/file/instant_ot_author_version_comp.pdf
+  journal: http://dx.doi.org/10.1145/3272127.3275091
+  preprint: https://hal.inria.fr/hal-01884157/file/instant_ot_author_version_comp.pdf
   slides: https://drive.google.com/file/d/1PYET7NeGyqgLe-2MgF0rWVA4zPax8RrP/view?usp=sharing
   code: https://github.com/ggael/otmap
   bib: https://gnader.github.io/assets/img/pub/[bib]_2018_ot-transport.bib
@@ -39,16 +39,18 @@ uniform grids. The core of our method is a novel iterative solver computing the 
 
 #### Citation
 
-```
+<pre class="text-muted alert-secondary small col-12">
+<code>
 @article{otmap_2018,
   author  = {Nader Georges and Gael Guennebaud},
   title   = {Instant Transport Maps on 2D Grid},
-  year    = {2018},
   journal = {ACM Trans. Graph.},
+  year    = {2018},
   volume  = {37},
   number  = {6},
   articleno = {249},
   numpages = {13},
   doi     = {10.1145/3272127.3275091}
 }
-```
+</code>
+</pre>

@@ -16,8 +16,8 @@ journal: Computer Graphics Forum
 conference: Pacific Graphics
 
 links:
-  doi: http://dx.doi.org/10.1111/cgf.12485
-  pdf: https://hal.inria.fr/hal-01059392/file/amse-pg.pdf
+  journal: http://dx.doi.org/10.1111/cgf.12485
+  preprint: https://hal.inria.fr/hal-01059392/file/amse-pg.pdf
   slides: https://geometry.cs.ucl.ac.uk/projects/2014/amse-pg/amse-pg.pptx
   bib: https://gnader.github.io/assets/img/pub/[bib]_2014_pointcloud-editing.bib
 
@@ -39,14 +39,16 @@ This paper presents a tool that enables the direct editing of surface features i
 
 #### Citation
 
-```
+<pre class="text-muted alert-secondary small col-12">
+<code>
 @article{pointcloud-editing_2014,
-journal = {Computer Graphics Forum},
-title   = {Adaptive Multi-scale Analysis for Point-based Surface Editing},
-author  = {Georges Nader and Gael Guennebaud and Nicolas Mellado },
-pages   = {171-179},
-volume  = {33},
-number  = {7},
-year    = {2014}
+  author  = {Georges Nader and Gael Guennebaud and Nicolas Mellado },
+  title   = {Adaptive Multi-scale Analysis for Point-based Surface Editing},
+  journal = {Computer Graphics Forum},
+  pages   = {171-179},
+  volume  = {33},
+  number  = {7},
+  year    = {2014}
 }
-```
+</code>
+</pre>
