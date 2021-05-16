@@ -3,7 +3,7 @@ layout: paper
 
 year: 2021
 
-title: "KnitKit : A flexible system for machine knitting of customizable textiles"
+title: "KnitKit: A flexible system for machine knitting of customizable textiles"
 authors:
   - ["Georges Nader", [0, 1]]
   - ["Yu Han Quek", [1]]
