@@ -35,7 +35,7 @@ caption: >
 
 #### Abstract
 
-we introduce **KnitKit**, a flexible and customizable system for the computational design and production of functional, multi-material, and three-dimensional knitted textiles.
+We introduce **KnitKit**, a flexible and customizable system for the computational design and production of functional, multi-material, and three-dimensional knitted textiles.
 Our system greatly simplifies the knitting of 3D objects with complex, varying patterns that use multiple yarns and stitch patterns by separating the high-level design specification in terms of geometry, stitch patterns, materials or colors from the low-level, machine-specific knitting instruction generation.
 Starting from a triangular 3D mesh and a 2D texture that specifies knitting patterns on top of the geometry, our system generates the required machine instructions in three major steps.
 First, the input is processed and the _KnitNet_ data structure is generated.
