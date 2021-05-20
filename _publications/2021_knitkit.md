@@ -23,7 +23,7 @@ conference: Siggraph
 links:
   # doi: AVAILABLE_SOON
   preprint: https://hal.archives-ouvertes.fr/hal-03214570/document
-  supplementary: https://drive.google.com/drive/folders/14t54rAKR9R9Hk4kfZ_62K7gMHHwwK-YQ
+  supplementary: https://drive.google.com/file/d/1n23oqMpP60322ilFk36B_wDibLQW4l9T/view?usp=sharing
   # slides: AVAILABLE_SOON
   # code: AVAILABLE_SOON
   bib: https://gnader.github.io/assets/img/pub/[bib]_2021_knitkit.bib
