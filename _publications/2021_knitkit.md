@@ -5,7 +5,7 @@ year: 2021
 
 title: "KnitKit: A flexible system for machine knitting of customizable textiles"
 authors:
-  - ["Georges Nader", [1, 0]]
+  - ["Georges Nader", [0, 1]]
   - ["Yu Han Quek", [1]]
   - ["Pei Zhi Chia", [1]]
   - ["Oliver Weeger", [2, 1]]
@@ -23,7 +23,7 @@ conference: Siggraph
 links:
   # doi: AVAILABLE_SOON
   preprint: https://hal.archives-ouvertes.fr/hal-03214570/document
-  supplementary: https://hal.archives-ouvertes.fr/hal-03214570/document
+  supplementary: https://drive.google.com/drive/folders/14t54rAKR9R9Hk4kfZ_62K7gMHHwwK-YQ
   # slides: AVAILABLE_SOON
   # code: AVAILABLE_SOON
   bib: https://gnader.github.io/assets/img/pub/[bib]_2021_knitkit.bib
