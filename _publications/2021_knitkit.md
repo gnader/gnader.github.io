@@ -22,6 +22,7 @@ conference: Siggraph
 
 links:
   # doi: AVAILABLE_SOON
+  Journal: https://dl.acm.org/doi/abs/10.1145/3450626.3459790
   preprint: https://hal.archives-ouvertes.fr/hal-03214570/document
   supplementary: https://hal.archives-ouvertes.fr/hal-03214570/file/SIGGRAPH_2021_knitkit_supplementary.pdf
   # slides: AVAILABLE_SOON
@@ -47,7 +48,7 @@ We showcase the potential of this computational approach by designing and fabric
 #### Video
 
 <div class="mx-3 mt-2 video-responsive">
-  <iframe src="https://youtu.be/A84xkyfeykU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/A84xkyfeykU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 #### Citation
