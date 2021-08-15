@@ -46,7 +46,9 @@ We showcase the potential of this computational approach by designing and fabric
 
 #### Video
 
-**TO BE AVAILABLE SOON** (after Siggraph 2021)
+<div class="mx-3 mt-2 video-responsive">
+  <iframe src="https://youtu.be/A84xkyfeykU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 #### Citation
 
