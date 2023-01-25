@@ -4,7 +4,7 @@ layout: default
 
 <div class="container h-100">
   <div class=""><h2 class="my-0">Publications</h2></div>
-  {%- for _year_ in (2014..2021) reversed -%}
+  {%- for _year_ in (2014..2022) reversed -%}
     {%- assign pubs = site.publications | where_exp: "pub", "pub.year == _year_" | sort: "year" | reverse -%}
     {%- if pubs.size > 0 -%}
         <div class="mt-4 py-0 text-center"><h4 class="py-0">{{_year_}}</h4></div>

@@ -40,7 +40,7 @@ layout: default
         {%- endfor -%}
       </div>
       <div class="mt-2 text-center">
-        {{page.journal}} {% if page.conference %}({{page.conference}} {{page.year}}) {% endif %}
+        {{page.journal}} {% if page.special_issue %} special issue on {{page.special_issue}} {% endif %} {% if page.conference %}({{page.conference}} {{page.year}}) {% endif %}
       </div>
       {%- if page.award -%}
         <div class="text-center"><span class="badge badge-secondary">{{page.award}}</span></div>

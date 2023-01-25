@@ -15,7 +15,7 @@
       </div>
       <div class="col-12">
         <small>
-          <em>{{ pub.journal }} {% if pub.conference %}({{pub.conference}} {{pub.year}}) {% endif %}</em>
+          <em>{{ pub.journal }} {% if pub.special_issue %} special issue on {{pub.special_issue}} {% endif %} {% if pub.conference %}({{pub.conference}} {{pub.year}}) {% endif %}</em>
           {%- if pub.award -%} &nbsp;&nbsp;&nbsp;<span class="badge badge-secondary">{{pub.award}}</span>{%- endif -%}
         </small>
       </div>
