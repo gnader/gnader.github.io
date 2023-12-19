@@ -42,15 +42,15 @@ uniform grids. The core of our method is a novel iterative solver computing the 
 <pre class="text-muted alert-secondary small col-12">
 <code>
 @article{otmap_2018,
-  author  = {Nader Georges and Gael Guennebaud},
-  title   = {Instant Transport Maps on 2D Grid},
-  journal = {ACM Trans. Graph.},
-  year    = {2018},
-  volume  = {37},
-  number  = {6},
+  author    = {Nader Georges and Gael Guennebaud},
+  title     = {Instant Transport Maps on 2D Grid},
+  journal   = {ACM Trans. Graph.},
+  year      = {2018},
+  volume    = {37},
+  number    = {6},
   articleno = {249},
-  numpages = {13},
-  doi     = {10.1145/3272127.3275091}
+  numpages  = {13},
+  doi       = {10.1145/3272127.3275091}
 }
 </code>
 </pre>

@@ -34,12 +34,12 @@ Point Cloud Registration contributes a lot to measuring, monitoring, and simulat
 <pre class="text-muted alert-secondary small col-12">
 <code>
 @Article{pointcloudcregistration_2022,
-  AUTHOR    = {Jiang, Hengyu and Lasang, Pongsak and Nader, Georges and Wu, Zheng and Tanasnitikul, Takrit},
-  TITLE     = {Feature Consistent Point Cloud Registration in Building Information Modeling},
-  JOURNAL   = {Sensors},
-  VOLUME    = {22},
-  YEAR      = {2022},
-  NUMBER    = {24}
+  Author    = {Jiang, Hengyu and Lasang, Pongsak and Nader, Georges and Wu, Zheng and Tanasnitikul, Takrit},
+  Title     = {Feature Consistent Point Cloud Registration in Building Information Modeling},
+  Journal   = {Sensors},
+  Volume   = {22},
+  Year      = {2022},
+  Number    = {24}
 }
 </code>
 </pre>
