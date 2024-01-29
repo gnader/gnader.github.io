@@ -37,7 +37,7 @@ Point Cloud Registration contributes a lot to measuring, monitoring, and simulat
   Author    = {Jiang, Hengyu and Lasang, Pongsak and Nader, Georges and Wu, Zheng and Tanasnitikul, Takrit},
   Title     = {Feature Consistent Point Cloud Registration in Building Information Modeling},
   Journal   = {Sensors},
-  Volume   = {22},
+  Volume    = {22},
   Year      = {2022},
   Number    = {24}
 }
