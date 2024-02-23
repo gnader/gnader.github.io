@@ -19,6 +19,7 @@ conference: Eurographics
 links:
   arxiv: https://arxiv.org/abs/2311.16121
   dataset (soon): https://arxiv.org/abs/2311.16121
+  bib: https://gnader.github.io/assets/img/pub/[bib]_2024_neural_textures.bib 
 
 caption: >
   Overview of our neural material framework. (a) The neural features and the MLP are fitted through backpropagation to match the filtered material. (b) After training, the neural features are exported as mipmapped texture sets that can be sampled by the engine and the weights of the MLP are exported as a binary buffer. A shader is used to perform the MLP inference after trilinearly sampling the neural texture, outputting the filtered material. Finally, The renderer can perform the shading step as usual.
