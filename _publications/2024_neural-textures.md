@@ -18,7 +18,9 @@ conference: Eurographics
 
 links:
   arxiv: https://arxiv.org/abs/2311.16121
-  dataset (soon): https://arxiv.org/abs/2311.16121
+  supplementary : https://hal.science/hal-04255874v2/preview/supplementary_material.pdf
+  dataset(soon): https://gnader.github.io/publications/2024-neural-textures.html
+  slides(soon): https://gnader.github.io/publications/2024-neural-textures.html
   bib: https://gnader.github.io/assets/img/pub/[bib]_2024_neural_textures.bib 
 
 caption: >
