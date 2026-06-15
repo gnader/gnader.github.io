@@ -17,10 +17,9 @@ journal: Computer Graphics Forum
 conference: Eurographics
 
 links:
+  journal: https://onlinelibrary.wiley.com/doi/abs/10.1111/cgf.15013
   arxiv: https://arxiv.org/abs/2311.16121
   supplementary : https://hal.science/hal-04255874v2/preview/supplementary_material.pdf
-  dataset(soon): https://gnader.github.io/publications/2024-neural-textures.html
-  slides(soon): https://gnader.github.io/publications/2024-neural-textures.html
   bib: https://gnader.github.io/assets/img/pub/[bib]_2024_neural_textures.bib 
 
 caption: >
@@ -33,12 +32,12 @@ Neural materials typically consist of a collection of neural features along with
 <pre class="text-muted alert-secondary small col-12">
 <code>
 @Article{neuraltextures_2024,
-      title={Real-Time Neural Materials using Block-Compressed Features}, 
-      author={Clément Weinreich and Louis de Oliveira and Antoine Houdard and Georges Nader},
-      year={2024},
-      eprint={2311.16121},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+    title={Real-Time Neural Materials using Block-Compressed Features}, 
+    author={Clément Weinreich and Louis de Oliveira and Antoine Houdard and Georges Nader},
+    journal = {Computer Graphics Forum},
+    volume = {43},
+    number = {2},
+    year = {2024}
 }
 </code>
 </pre>
