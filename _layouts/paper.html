@@ -79,11 +79,28 @@ layout: default
   <hr/>
   {%- endif -%}
     
-  <!-- paper abstract --> 
+  <!-- paper abstract -->
   <div class="row align-items-center h-100 my-3">
     <div class="col-12 text-justify">
         {{content}}
     </div>
   </div>
-  <!-- <hr/> -->
+
+  <!-- citation -->
+  {%- if page.links.bib -%}
+  {%- assign bib_rel = page.links.bib | strip | remove: 'https://gnader.github.io' | replace: '[', '%5B' | replace: ']', '%5D' -%}
+  <hr/>
+  <div class="row align-items-center h-100 my-3">
+    <div class="col-12">
+      <h4>Citation</h4>
+      <pre class="text-muted alert-secondary small col-12 py-3"><code id="bib-content">Loading...</code></pre>
+    </div>
+  </div>
+  <script>
+    fetch("{{ bib_rel }}")
+      .then(function(r){ return r.text(); })
+      .then(function(t){ document.getElementById('bib-content').textContent = t.trim(); })
+      .catch(function(){ document.getElementById('bib-content').textContent = 'Citation unavailable.'; });
+  </script>
+  {%- endif -%}
 </div> <!-- container -->

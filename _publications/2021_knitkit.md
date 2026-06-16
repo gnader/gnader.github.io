@@ -50,19 +50,3 @@ We showcase the potential of this computational approach by designing and fabric
 <div class="mx-3 mt-2 video-responsive">
   <iframe src="https://www.youtube.com/embed/A84xkyfeykU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-
-#### Citation
-
-<pre class="text-muted alert-secondary small col-12">
-<code>
-@article{knitkit2021,
-  author    = {Nader, Georges and Quek, Yu Han and Chia, Pei Zhi and Weeger, Oliver and Yeung, Sai-Kit},
-  title     = {KnitKit: A flexible system for machine knitting of customizable textiles},
-  journal   = {ACM Transactions on Graphics (TOG)},
-  number    = {4},
-  volume    = {40},
-  year      = {2021},
-  publisher = {ACM}
-}
-</code>
-</pre>

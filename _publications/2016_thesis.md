@@ -28,18 +28,3 @@ Geometric operations applied to a 3D mesh introduce geometric distortion in the 
 #### Résumé
 
 Les opérations géométriques appliquées aux maillages 3D introduisent des distorsions géometirques qui peuvent être visibles pour un observateur humain. Dans cette thèse, nous étudions l’impact perceptuel de ces distorsions. Plus précisément, notre objectif est de calculer le seuil à partir duquel les distorsions géométriques locales deviennent visibles. Afin d’atteindre notre but, nous définissons tout d’abord des caractéristiques perceptuelles pour les maillages 3D. Nous avons ensuite effectué une étude expérimentale des propriétés du système visuel humain (sensibilité au contraste et effet du masquage visuel) en observant un maillage 3D. Les résultats de ces expériences sont finalement utilisés pour proposer un algorithme qui calcule le seuil de visibilité relatif à une distorsion locale. L’algorithme proposé s’adapte aux différentes conditions d’affichage (résolution et taille de l’écran), d’illumination et au type de rendu. Enfin, nous montrons l’utilité d’un tel algorithme en intégrant le seuil de visibilité dans le pipeline de plusieurs opérations géométriques (ex: simplification, subdivision adaptative).
-
-#### Citation
-
-<pre class="text-muted alert-secondary small col-12">
-<code>
-@phdthesis{naderthesis_2016,
-  Author  = {Nader, Georges}, 
-  Title   = {Evaluating the visibility threshold for a local geometric distortion on a 3D mesh and its applications},
-  Number  = {2016LYSE1239},
-  School  = {Universite de Lyon}, 
-  Year    = {2016}, 
-  Type    = {Theses} 
-}
-</code>
-</pre>
