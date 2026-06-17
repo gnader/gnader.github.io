@@ -1,5 +1,6 @@
 ---
 layout: paper
+topic: "Visual Perception"
 year: 2016
 
 title: Visual contrast sensitivity and discrimination for 3D meshes and their applications
@@ -19,7 +20,7 @@ award: Best Paper Award
 
 links:
   journal: https://doi.org/10.1111/cgf.13046
-  preprint: https://hal.inria.fr/hal-01376275/document
+  author: https://hal.inria.fr/hal-01376275/document
   supplementary: https://hal.inria.fr/INRIA/hal-01376275/file/supplementary.pdf
   slides: https://drive.google.com/file/d/15M12_F19HeD2ySHpqx25ePHxkFDl-ahH/view?usp=sharing
   bib: https://gnader.github.io/assets/img/pub/[bib]_2016_contrast-sensitivity.bib

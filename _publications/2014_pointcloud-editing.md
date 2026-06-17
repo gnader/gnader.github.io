@@ -1,5 +1,6 @@
 ---
 layout: paper
+topic: "Geometry & Point Clouds"
 year: 2014
 
 title: Adaptive multi‐scale analysis for point‐based surface editing

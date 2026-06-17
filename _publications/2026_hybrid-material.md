@@ -1,5 +1,6 @@
 ---
 layout: paper
+topic: "Neural Rendering"
 
 year: 2026
 

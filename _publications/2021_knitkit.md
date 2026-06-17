@@ -1,5 +1,6 @@
 ---
 layout: paper
+topic: "Computational Fabrication"
 
 year: 2021
 
@@ -21,12 +22,10 @@ journal: ACM Transactions on Graphics
 conference: Siggraph
 
 links:
-  # doi: AVAILABLE_SOON
-  Journal: https://dl.acm.org/doi/abs/10.1145/3450626.3459790
-  preprint: https://hal.archives-ouvertes.fr/hal-03214570/document
+  journal: https://dl.acm.org/doi/abs/10.1145/3450626.3459790
+  author: https://hal.archives-ouvertes.fr/hal-03214570/document
   supplementary: https://hal.archives-ouvertes.fr/hal-03214570/file/SIGGRAPH_2021_knitkit_supplementary.pdf
   slides: https://docs.google.com/presentation/d/1RFFTDRfC_fxPEUFMMRmzIUHtWq0hTBmT/edit?usp=sharing&ouid=113379064980422751804&rtpof=true&sd=true
-  # code: https://github.com/gnader/KnitKit
   bib: https://gnader.github.io/assets/img/pub/[bib]_2021_knitkit.bib
 
 caption: >

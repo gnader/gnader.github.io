@@ -1,5 +1,6 @@
 ---
 layout: paper
+topic: "Geometry & Point Clouds"
 
 year: 2018
 
@@ -15,7 +16,7 @@ conference: Siggraph Asia
 
 links:
   journal: http://dx.doi.org/10.1145/3272127.3275091
-  preprint: https://hal.inria.fr/hal-01884157/file/instant_ot_author_version_comp.pdf
+  author: https://hal.inria.fr/hal-01884157/file/instant_ot_author_version_comp.pdf
   slides: https://drive.google.com/file/d/1PYET7NeGyqgLe-2MgF0rWVA4zPax8RrP/view?usp=sharing
   code: https://github.com/ggael/otmap
   bib: https://gnader.github.io/assets/img/pub/[bib]_2018_ot-transport.bib

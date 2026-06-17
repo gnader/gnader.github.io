@@ -1,5 +1,6 @@
 ---
 layout: paper
+topic: "Neural Rendering"
 
 year: 2024
 
@@ -18,7 +19,7 @@ conference: Eurographics
 
 links:
   journal: https://onlinelibrary.wiley.com/doi/abs/10.1111/cgf.15013
-  arxiv: https://arxiv.org/abs/2311.16121
+  author: https://arxiv.org/abs/2311.16121
   supplementary : https://hal.science/hal-04255874v2/preview/supplementary_material.pdf
   bib: https://gnader.github.io/assets/img/pub/[bib]_2024_neural_textures.bib 
 

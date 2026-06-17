@@ -1,5 +1,6 @@
 ---
 layout: paper
+topic: "Thesis"
 year: 2016
 
 title: Evaluating the visibility threshold for a local geometric distortion on a 3D mesh and its applications

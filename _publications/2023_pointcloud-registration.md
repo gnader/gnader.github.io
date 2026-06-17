@@ -1,5 +1,6 @@
 ---
 layout: paper
+topic: "Geometry & Point Clouds"
 
 year: 2023
 
@@ -7,7 +8,7 @@ title: "Local Topology Constrained Point Cloud Registration in Building Informat
 authors:
  - [Yazhou Liu, [0]]
  - [Jiang Hengyu, [0]] 
- - [Georges Nader, [1, 2]] 
+ - [Georges Nader, [1]] 
  - [Wu Zheng, [1]]
  - [Takrit Tanasnitikul, [1]]
  - [Pongsak Lasang, [1]] 
@@ -15,12 +16,11 @@ authors:
 affiliations:
  - School of Computer Science and Engineering, Nanjing University of Science and Technology
  - Panasonic R&D Center Singapore
- - Ubisoft La Forge
 
 journal: IEEE Sensors
 
 links:
-  journal: https://ieeexplore.ieee.org/abstract/document/10363107
+  journal: https://ieeexplore.ieee.org/document/10363107
   bib: https://gnader.github.io/assets/img/pub/[bib]_2023_pointcloud_registration.bib
 
 caption: >
