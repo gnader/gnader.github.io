@@ -1,0 +1,17 @@
+# Most recent first. `date` drives the displayed month/year; `content` accepts HTML.
+- date: 2026-04-01
+  content: >-
+    Our paper, <a href="https://ubisoft-laforge.github.io/world/hybridrdf/#">A Hybrid Neural-Microfacet BRDF Model for Real-Time Rendering</a>,
+    has been accepted to EGSR 2026.
+
+- date: 2025-11-01
+  content: >-
+    Our neural texture compression technology <a href=https://www.ubisoft.com/fr-fr/news/ignt.58488/shipping-neural-texture-compression-in-assassin-s-creed-mirage">shipped in Assassin's Creed Mirage: Valley of Memory</a>.
+
+- date: 2024-03-01
+  content: >-
+    We presented our neural texture compression technology at <a href="https://gdcvault.com/play/1034892/Machine-Learning-Summit-Real-time">GDC 2024</a>.
+
+- date: 2024-02-01 
+  content: >- 
+    Our paper, <a href="/publications/2024-neural-textures.html">Real-Time Neural Materials with Block-Compressed Features</a>, was accepted to EG 2024.

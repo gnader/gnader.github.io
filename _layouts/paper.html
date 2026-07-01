@@ -8,6 +8,10 @@ layout: default
   <div class="row align-items-center h-100">
     <div class="col-12 align-items-center">
       
+      {%- if page.conference -%}
+        {%- assign conf_label = page.conference_short | default: page.conference -%}
+        <div class="text-center mt-3"><span class="paper-venue-badge">{{conf_label}} {{page.year}}</span></div>
+      {%- endif -%}
       <div class="text-center mt-3"><h2>{{page.title}}</h2></div>
       <div class="text-center">
         <span>
@@ -40,10 +44,10 @@ layout: default
         {%- endfor -%}
       </div>
       <div class="mt-2 text-center">
-        {{page.journal}} {% if page.special_issue %} special issue on {{page.special_issue}} {% endif %} {% if page.conference %}({{page.conference}} {{page.year}}) {% endif %}
+        {{page.journal}} {% if page.special_issue %} special issue on {{page.special_issue}} {% endif %}
       </div>
       {%- if page.award -%}
-        <div class="text-center"><span class="badge badge-secondary">{{page.award}}</span></div>
+        <div class="text-center mt-2"><span class="award-badge"><i class="fas fa-award"></i>&nbsp;{{page.award}}</span></div>
       {%- endif -%}
 
 
@@ -52,7 +56,7 @@ layout: default
 
   <!-- paper links -->
   <div class="row h-100 my-3">
-    <div class="col-12 text-center">
+    <div class="col-12 text-center paper-links">
       {%- for link in page.links -%}
         {%- assign lk = link[0] | downcase | strip -%}
         {%- if lk == "journal" -%}{%- assign li = "fas fa-book-open" -%}
@@ -65,7 +69,7 @@ layout: default
         {%- elsif lk == "bib" -%}{%- assign li = "fas fa-quote-right" -%}
         {%- else -%}{%- assign li = "fas fa-link" -%}
         {%- endif -%}
-        <a class="mr-3" href="{{ link[1] | strip }}"><i class="{{ li }}"></i>&nbsp;{{ link[0] | strip }}</a>
+        <a href="{{ link[1] | strip }}"><i class="{{ li }}"></i>&nbsp;{{ link[0] | strip }}</a>
       {%- endfor -%}
     </div>
   </div>

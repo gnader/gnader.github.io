@@ -1,0 +1,320 @@
+/*******************************************************************************
+ * Components — site redesign.
+ * Theme-aware via the CSS custom properties defined in _themes.scss.
+ ******************************************************************************/
+
+$content-width: 960px;
+$navbar-height: 56px;
+
+/* ----------------------------------------------------------------------------
+ * Base / typography
+ * ------------------------------------------------------------------------- */
+body {
+  background-color: var(--global-bg-color);
+  color: var(--global-text-color);
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  line-height: 1.65;
+  padding-top: $navbar-height;
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-wrap {
+  flex: 1 0 auto;
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto Slab", "Roboto", serif;
+  font-weight: 500;
+  color: var(--global-text-color);
+}
+
+a {
+  color: var(--global-theme-color);
+  transition: color 0.15s ease;
+  &:hover {
+    color: var(--global-hover-color);
+    text-decoration: none;
+  }
+}
+
+.container {
+  max-width: $content-width;
+}
+
+.text-muted {
+  color: var(--global-muted-color) !important;
+}
+
+/* Accent rule used under section headers */
+.section-heading {
+  display: inline-block;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 3px solid var(--global-theme-color);
+}
+
+/* ----------------------------------------------------------------------------
+ * Navbar
+ * ------------------------------------------------------------------------- */
+.navbar.bg-light {
+  background-color: var(--global-navbar-bg-color) !important;
+  backdrop-filter: saturate(180%) blur(8px);
+  border-bottom: 1px solid var(--global-card-border-color);
+  box-shadow: none;
+
+  .navbar-brand {
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    color: var(--global-text-color);
+    &:hover { color: var(--global-theme-color); }
+  }
+
+  .navbar-nav {
+    align-items: center;
+  }
+
+  .navbar-nav .nav-link {
+    display: flex;
+    align-items: center;
+    color: var(--global-text-color) !important;
+    font-weight: 400;
+    &:hover,
+    &:focus,
+    &.active,
+    &.show { color: var(--global-theme-color) !important; }
+  }
+}
+
+/* Theme toggle button: reset the awkward legacy icon padding + vertically
+   center the icon with the adjacent nav-link text */
+#light-toggle {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  .fa-sun, .fa-moon {
+    padding: 0 !important;
+    color: var(--global-text-color);
+  }
+  &:hover .fa-sun, &:hover .fa-moon { color: var(--global-theme-color); }
+}
+
+/* ----------------------------------------------------------------------------
+ * Home — hero
+ * ------------------------------------------------------------------------- */
+.hero {
+  padding-top: 2.5rem;
+  padding-bottom: 1rem;
+
+  .hero-photo {
+    width: 100%;
+    max-width: 240px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--global-card-bg-color);
+    box-shadow: 0 8px 24px var(--global-card-border-color);
+  }
+
+  .hero-name {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+  }
+
+  .hero-role {
+    font-size: 1.15rem;
+    color: var(--global-theme-color);
+    font-weight: 400;
+    margin-bottom: 1rem;
+    .sep { color: var(--global-muted-color); padding: 0 0.4rem; }
+  }
+
+  .hero-bio {
+    max-width: 42rem;
+    p:last-child { margin-bottom: 0; }
+  }
+}
+
+/* Social icon row (used in hero + footer) */
+.social-icons {
+  font-size: 1.5rem;
+  a {
+    color: var(--global-icon-color);
+    margin: 0 0.5rem;
+    &:hover { color: var(--global-theme-color); }
+  }
+}
+
+/* ----------------------------------------------------------------------------
+ * News
+ * ------------------------------------------------------------------------- */
+.news-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-left: 2px solid var(--global-card-border-color);
+
+  li {
+    position: relative;
+    padding: 0.4rem 0 0.4rem 1.25rem;
+    &::before {
+      content: "";
+      position: absolute;
+      left: -5px;
+      top: 1rem;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--global-theme-color);
+    }
+  }
+
+  .news-date {
+    display: inline-block;
+    min-width: 6rem;
+    font-weight: 500;
+    color: var(--global-muted-color);
+    font-size: 0.9rem;
+  }
+}
+
+/* ----------------------------------------------------------------------------
+ * Publication items / cards
+ * ------------------------------------------------------------------------- */
+.pub-item {
+  position: relative;
+  background-color: var(--global-card-bg-color);
+  border: 1px solid var(--global-card-border-color);
+  border-radius: 10px;
+  padding: 1rem;
+  margin-top: 1rem;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px var(--global-card-border-color);
+  }
+
+  // full-card overlay link to the paper page; sits below the interactive
+  // elements (title, thumbnail, action links), which are lifted above it
+  .pub-card-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    border-radius: 10px;
+  }
+
+  .col-auto,
+  .col { position: relative; }
+
+  .pub-title a,
+  .pub-links a { position: relative; z-index: 2; }
+
+  .pub-thumb {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+
+  .pub-title a {
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    color: var(--global-text-color);
+    &:hover { color: var(--global-theme-color); }
+  }
+
+  .pub-authors, .pub-venue { color: var(--global-text-color); }
+  .pub-venue em { color: var(--global-muted-color); }
+
+  .pub-links a {
+    color: var(--global-muted-color);
+    margin-right: 1rem;
+    white-space: nowrap;
+    &:hover { color: var(--global-theme-color); }
+  }
+}
+
+.see-all {
+  font-weight: 500;
+  &::after { content: " \2192"; }
+}
+
+/* ----------------------------------------------------------------------------
+ * Paper page
+ * ------------------------------------------------------------------------- */
+.paper-venue-badge {
+  display: inline-block;
+  padding: 0.35rem 0.9rem;
+  border-radius: 6px;
+  background-color: var(--global-theme-color);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.award-badge {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #f9d976 0%, #e0a800 100%);
+  border: 1px solid #c8930a;
+  color: #5a4300;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  box-shadow: 0 2px 6px rgba(200, 147, 10, 0.35);
+
+  i { color: #7a5c00; }
+}
+
+// more compact award badge inside the publication cards
+.pub-item .award-badge {
+  padding: 0.15rem 0.55rem;
+  font-size: 0.7rem;
+  box-shadow: 0 1px 4px rgba(200, 147, 10, 0.3);
+}
+
+.paper-links a {
+  color: var(--global-muted-color);
+  margin: 0 0.75rem;
+  white-space: nowrap;
+  &:hover { color: var(--global-theme-color); }
+}
+
+/* ----------------------------------------------------------------------------
+ * Footer
+ * ------------------------------------------------------------------------- */
+.site-footer {
+  flex-shrink: 0;
+  background-color: var(--global-footer-bg-color);
+  color: var(--global-footer-text-color);
+
+  .footer-social a {
+    color: var(--global-footer-link-color);
+    font-size: 1.35rem;
+    margin: 0 0.5rem;
+    &:hover { color: var(--global-theme-color); }
+  }
+  .footer-copy { color: var(--global-footer-text-color); }
+}
+
+/* Theme transition helper (added by dark_mode.js) */
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+  transition: all 500ms !important;
+  transition-delay: 0 !important;
+}

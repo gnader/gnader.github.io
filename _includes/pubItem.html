@@ -1,25 +1,28 @@
-<div class="row mt-2" style="min-height: 160px;">
-    <div class="col-auto d-none d-md-block px-0 mr-3">
-      <a href="{{pub.url}}"><img style="width: 120px; height: 120px; object-fit: cover;" src="/assets/img/pub/{{pub.slug}}_thumb.png" alt="{{pub.slug}} thumbnail"/></a>
+{%- comment -%} an external project_page, when set, overrides the internal paper page {%- endcomment -%}
+{%- assign pub_link = pub.project_page | default: pub.url -%}
+<div class="pub-item row no-gutters">
+    <a href="{{pub_link}}" class="pub-card-link" aria-label="{{ pub.title }}"></a>
+    <div class="col-auto d-none d-md-block text-center mr-3">
+      <a href="{{pub_link}}"><img class="pub-thumb" src="/assets/img/pub/{{pub.slug}}_thumb.png" alt="{{pub.slug}} thumbnail"/></a>
     </div>
 
-    <div class="col px-0">
-      <div class="col-12 font-weight-bold"><a href="{{pub.url}}">{{ pub.title }}</a></div>
-      <div class="col-12">
+    <div class="col">
+      <div class="pub-title"><a href="{{pub_link}}">{{ pub.title }}</a></div>
+      <div class="pub-authors">
         <small>
         {{pub.authors[0][0]}}
         {%- for author in pub.authors offset:1 -%}
-        , {{ author[0] }} 
+        , {{ author[0] }}
         {%- endfor -%}
         </small>
       </div>
-      <div class="col-12">
+      <div class="pub-venue">
         <small>
-          <em>{{ pub.journal }} {% if pub.special_issue %} special issue on {{pub.special_issue}} {% endif %} {% if pub.conference %}({{pub.conference}} {{pub.year}}) {% endif %}</em>
-          {%- if pub.award -%} &nbsp;&nbsp;&nbsp;<span class="badge badge-secondary">{{pub.award}}</span>{%- endif -%}
+          <em>{{ pub.journal }} {% if pub.special_issue %} special issue on {{pub.special_issue}} {% endif %} {% if pub.conference %}{%- assign conf_label = pub.conference_short | default: pub.conference -%}({{conf_label}} {{pub.year}}) {% endif %}</em>
+          {%- if pub.award -%} &nbsp;&nbsp;&nbsp;<span class="award-badge"><i class="fas fa-award"></i>&nbsp;{{pub.award}}</span>{%- endif -%}
         </small>
       </div>
-      <div class="col-12 mt-2">
+      <div class="pub-links mt-2">
         {%- for link in pub.links -%}
           {%- assign lk = link[0] | downcase | strip -%}
           {%- if lk == "journal" -%}{%- assign li = "fas fa-book-open" -%}
@@ -32,7 +35,7 @@
           {%- elsif lk == "bib" -%}{%- assign li = "fas fa-quote-right" -%}
           {%- else -%}{%- assign li = "fas fa-link" -%}
           {%- endif -%}
-          <a class="mr-3" href="{{ link[1] | strip }}"><i class="{{ li }}"></i>&nbsp;{{ link[0] | strip }}</a>
+          <a href="{{ link[1] | strip }}"><i class="{{ li }}"></i>&nbsp;{{ link[0] | strip }}</a>
         {%- endfor -%}
       </div>
     </div>

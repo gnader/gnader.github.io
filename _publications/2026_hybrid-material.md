@@ -14,19 +14,21 @@ authors:
  - [Damien Rioux-Lavoie, [0]] 
  - [Romain Pacanowski, [1]] 
 
-
 affiliations:
  - Ubisoft La Forge
  - Inria Bordeaux Sud-Ouest
 
 journal: Computer Graphics Forum
 conference: Eurographics Symposium on Rendering
+conference_short: EGSR
 
-# links:
-#   journal: https://onlinelibrary.wiley.com/doi/abs/10.1111/cgf.15013
-#   arxiv: https://arxiv.org/abs/2311.16121
-#   supplementary : https://hal.science/hal-04255874v2/preview/supplementary_material.pdf
-#   bib: https://gnader.github.io/assets/img/pub/[bib]_2024_neural_textures.bib 
+project_page: https://ubisoft-laforge.github.io/world/hybridrdf/
+
+links:
+  journal: https://diglib.eg.org/items/add38fdd-b714-45b3-95d8-a2c95ca2765f
+  author: https://ubisoft-laforge.github.io/world/hybridrdf/pdf/preprint.pdf
+  supplementary : https://ubisoft-laforge.github.io/world/hybridrdf/pdf/preprint-supp.pdf
+  bib: https://gnader.github.io/assets/img/pub/[bib]_2026_hybridmat.bib 
 
 caption: >
     For each material, the neural correction improves upon the microfacet model alone, capturing subtle appearance effects, while the analytical component remains a faithful and useful approximation

@@ -1,5 +1,10 @@
-<footer class="py-2 bg-light fixed-bottom">
+<footer class="site-footer mt-5 py-4">
   <div class="container text-center">
-    {% include social.html %}
- </div>
+    <div class="footer-social mb-2">
+      {% include social.html %}
+    </div>
+    <div class="footer-copy small">
+      &copy; {{ site.time | date: '%Y' }} {{ site.title }}
+    </div>
+  </div>
 </footer>

@@ -4,16 +4,34 @@
 
 title: "Georges Nader"
 email: georgesnader90@gmail.com
-description: Georges Nader's homepage
+description: >-
+  Personal homepage of Georges Nader, Research Scientist at Ubisoft La Forge,
+  working on computer graphics, computer vision and geometry processing.
 
 url: "https://gnader.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
+
+# Used by jekyll-seo-tag for Open Graph / Twitter Card metadata
+author:
+  name: Georges Nader
+logo: /assets/img/profile.jpeg
+social:
+  name: Georges Nader
+  links:
+    - https://scholar.google.com/citations?user=ZdFsulYAAAAJ
+    - https://github.com/gnader
+    - https://www.linkedin.com/in/gnader
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/img/profile.jpeg
 
 google-verification: HueUKQheeA1G7so7eLScOMlAEegv11lHfJ-RmJRR9R0
 
 # build settings
 sass:
-  sass_dir: ./css
+  sass_dir: _sass
   style: compressed
 
 # -----------------------------------------------------------------------------
@@ -47,6 +65,7 @@ include: ["_pages"]
 
 plugins:
   - jekyll-sitemap
+  - jekyll-seo-tag
 
 # -----------------------------------------------------------------------------
 # Library versions
@@ -68,9 +87,6 @@ jquery:
   integrity: "sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
 mathjax:
   version: "3.1.2"
-mansory:
-  version: "4.2.2"
-  integrity: "sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI="
 mdb:
   version: "4.19.1"
   integrity:

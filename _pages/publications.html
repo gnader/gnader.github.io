@@ -1,15 +1,15 @@
 ---
 layout: default
 title: Publications
+permalink: /publications/
 ---
 
-<div class="container h-100">
-  <div class=""><h2 class="my-0">Publications</h2></div>
+<div class="container">
+  <h2 class="mt-4 mb-4">Publications</h2>
   {%- for topic in site.data.topics -%}
     {%- assign pubs = site.publications | where: "topic", topic | sort: "year" | reverse -%}
     {%- if pubs.size > 0 -%}
-      <div class="mt-4 mb-1"><h4>{{ topic }}</h4></div>
-      <hr class="mt-0"/>
+      <div class="mt-5"><h4 class="section-heading">{{ topic }}</h4></div>
       {%- for pub in pubs -%}
         {% include pubItem.html %}
       {%- endfor -%}

@@ -2,10 +2,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
+<!-- Theme (must run before paint to avoid a flash of the wrong theme) -->
+<script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
+
 <!-- Google Verification -->
 <meta name ="google-site-verification" content="{{ site.google-verification }}"/>
 
-<title>{{ page.title }} - {{ site.title }}</title>
+<!-- SEO: title, description, Open Graph & Twitter Card (jekyll-seo-tag) -->
+{% seo %}
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="{{ '/assets/img/favicon.png' | relative_url }}">
+<link rel="apple-touch-icon" href="{{ '/assets/img/favicon.png' | relative_url }}">
 
 <!-- Bootstrap & MDB -->
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/{{ site.bootstrap.version }}/css/bootstrap.min.css" rel="stylesheet" integrity="{{ site.bootstrap.integrity.css }}" crossorigin="anonymous">
@@ -21,7 +29,6 @@
 
 <!-- Styles -->
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-<link rel="canonical" href="{{ page.url | replace:'index.html','' | relative_url }}">
 
 <!-- JQuery -->
 {% include scripts/jquery.html %}
